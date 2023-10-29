@@ -20,8 +20,8 @@
 4. A variable declared within the opening and closing parenthesis of a method signature is called a `parameter`.
 5. What are the eight primitive types suppported by the Java Programming Language?
  -> byte short int long float double char boolean
-6. Character strings are represented by the class [java.lang.String].
-7. An [array] is a container object that holds a fixed number of values of a single type.
+6. Character strings are represented by the class `java.lang.String`.
+7. An `array` is a container object that holds a fixed number of values of a single type.
 
 [source,java]
 ----
@@ -48,9 +48,12 @@ Which operators does the code contain? -> `>` and `+`
 2. Consider the following code snippet.
     int i = 10;
     int n = i++%5;
+
 ** What are the values of i and n after the code is executed?
 ** What are the final values of i and n if instead of using the postfix increment operator (i++)
-** you use the prefix version (++i))? -> i = 11로 고정, n은 후위 연산자(i++)일 경우 0, 전위 연산자(++i)일 경우 1
+** you use the prefix version (++i))? +
+
+-> i = 11로 고정, n은 후위 연산자(i++)일 경우 0, 전위 연산자(++i)일 경우 1
 
 
 3. To invert the value of a boolean, which operator would you use? -> `!`
