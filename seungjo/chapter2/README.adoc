@@ -145,3 +145,21 @@ public class ComputeResult {
 }
 ----
 
+== Mutating values vs. reassigning variables
+
+* `String` -> immutable type, 값을 변경하면 새로운 객체를 생성하고 그 객체를 참조
+* `StringBuilder` -> mutable type, 값을 변경하면 기존 객체의 값을 변경
+
+image::images/string.png[title = String, width=300, align="center"]
+image::images/stringbuilder.png[title = StringBuilder, width=300, align="center"]
+
+=== Immutable references
+
+[source,java]
+----
+final int n = 5;
+----
+* 자바에서는 `final` 키워드를 사용하여 참조를 불변으로 만들 수 있음.
+* 위와 같이 선언된 변수 n은 변경이 불가능함.
+
+
