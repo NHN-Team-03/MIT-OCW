@@ -1,0 +1,40 @@
+= https://ocw.mit.edu/ans7870/6/6.005/s16/classes/03-testing/[Reading 3: Testing]
+
+> TOPIC : 테스트의 가치와 테스트 우선 프로그래밍, 테스트 코드 작성,, 테스트 커버리지, 블랙박스 vs 화이트박스 테스트
+
+
+== Validation
+* 테스트는 유효성 검사를 하는 일반적인 프로세스
+* 테스트(검증)의 목적은 프로그램의 문제를 찾고 이를 통해 **프로그램의 정확성(program's correctness)**에 대한 확신을 높이는 것.
+
+1. *Formal reasoning (Verification)* 은 프로그램이 정확하다는 것을 증명
+2. *Code review* 를 통해서 다른 사람이 검토 후 버그를 찾아내는 과정
+3. *Testing* 은 프로그램을 실행시켜 버그를 찾아내는 과정
+
+_best validation을 했다고 해도 소프트웨어에서 완벽한 품질을 달성하는 것은 매우 어렵다._
+
+== Why Software Testing is Hard
+
+1. *Exhaustive testing (철저한 테스트)* 는 불가능!
+2. *Haphazard testing (무작정 테스트)* ("just try it and see if it works")는 버그를 찾을 가능성이 적다.
+3. *Random or statistical testing (무작위 통계 테스트)* 는 소프트웨어에 적합하지 않다.
+
+{empty} +
+
+> *Putting on Your Testing Hat*: 코딩할 때 목표는 프로그램이 작동하는 것이지만, 테스트를 할 때는 실패하도록 만들어라.
+
+== Test-first Programming
+* 검증되지 않은 코드가 잔뜩 쌓이게 하지 말고, 조기에 자주 테스트하자.
+* 단일 기능 개발의 순서는 다음과 같다.
+1. 함수에 대한 명세를 작성
+2. 명세를 실행하는 테스트를 작성
+3. 실제 동작하는 코드를 작성. -> 테스트가 성공하면 작업 완료!
+
+* `명세(specificatioin)` 는 함수의 입출력 동작을 설명한다.
+
+== Test Coverage
+* Statement coverage : 모든 명령문이 일부 테스트 케이스에 의해 실행되는지 여부 확인
+* Branch coverage : 프로그램의 모든 분기(if, while)가 참, 거짓을 모두 테스트하는지 여부 확인
+* Path coverage : 프로그램의 모든 경로(분기 조합)을 테스트하는지 여부 확인
+
+
